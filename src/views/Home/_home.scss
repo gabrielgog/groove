@@ -1,0 +1,39 @@
+.flex_container {
+    display: flex;
+    column-gap: 50px;
+    margin-bottom: 84px;
+
+    &__left {
+        margin-top: 86px;
+    }
+
+    &>* {
+        flex: 1
+    }
+
+    & img {
+        width: 100%;
+    }
+}
+
+
+.homepage {
+    &__heading {
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 80px;
+        letter-spacing: -6px;
+    }
+
+    &__caption {
+        margin: 27px 0;
+        font-size: 20px;
+        font-weight: 450;
+        color: #868686;
+    }
+
+    img {
+        // width: 550px;
+        // height: 700px;
+    }
+}

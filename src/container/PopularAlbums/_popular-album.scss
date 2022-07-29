@@ -1,0 +1,14 @@
+.popular__albums {
+    &-title {
+        margin-bottom: 50px;
+    }
+
+    &-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: auto;
+        grid-column-gap: 62px;
+        grid-row-gap: 50px;
+        // justify-content: space-between;
+    }
+}

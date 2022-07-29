@@ -1,0 +1,25 @@
+.albums {
+    &__content {
+        margin-bottom: 80px;
+        width: 62%;
+        img {
+            width: 38px;
+            height: 38px;
+            margin-bottom: 30px;
+        }
+
+        &_title {
+            font-weight: 700;
+            font-size: 80px;
+            line-height: 85px;
+            letter-spacing: -5px;
+        }
+
+        &_caption {
+            margin: 27px 0;
+            font-size: 20px;
+            font-weight: 450;
+            color: #868686;
+        }
+    }
+}

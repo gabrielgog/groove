@@ -1,0 +1,25 @@
+.search {
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    width: 65%;
+    padding: 13px 20px;
+    border-radius: 74px;
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+
+    input {
+        flex-grow: 1;
+        border: none;
+        outline: none;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: -1px;
+        color: #868686;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .search {
+        width: auto
+    }
+}

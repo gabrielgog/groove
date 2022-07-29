@@ -1,0 +1,79 @@
+.stagger__in {
+    $delay: 0.3;
+
+    @for $i from 1 through 20 {
+        &--#{$i} {
+            position: relative;
+            animation: fade-in-from-top 1s #{$delay}s both cubic-bezier(0.34, 1.56, 0.64, 1);
+            animation-fill-mode: backwards;
+        }
+
+        $delay: $delay + 0.1;
+    }
+}
+
+@keyframes fade-in-from-top {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.98);
+        position: relative;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        position: relative;
+    }
+}
+
+@keyframes fade-in-from-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-70px) scale(0.98);
+        position: relative;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        position: relative;
+    }
+}
+
+.fade-in-from-left {
+    animation: fade-in-from-left 0.5s ease-out;
+}
+
+@keyframes fade-in-from-right {
+    0% {
+        opacity: 0;
+        transform: translateX(70px) scale(0.98);
+        position: relative;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        position: relative;
+    }
+}
+
+.fade-in-from-right {
+    animation: fade-in-from-right 0.5s ease-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.fade-in {
+    animation: fade-in 0.5s ease-out;
+}
